@@ -33,7 +33,7 @@ def extract_words(text):
 
 def calculate_tfidf(list_all, text_1):
     # TfidfVectorizerのインスタンスを生成
-    vectorizer = TfidfVectorizer(stop_words=stop_words)
+    vectorizer = TfidfVectorizer(stop_words="english")
     # list_allを学習
     X = vectorizer.fit_transform(list_all)
     # text_1にTfidfモデルを適用
