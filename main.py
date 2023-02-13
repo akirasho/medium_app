@@ -102,6 +102,5 @@ def main():
     # Wordcloudを描画する
     plot_wordcloud_black(tfidf_result, title)
 
-
 if __name__ == '__main__':
     main()

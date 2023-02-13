@@ -1,9 +1,9 @@
+pip
 streamlit
 numpy
 pandas
 scikit-learn
 wordcloud
 Pillow
-sklearn
 nltk
 matplotlib
