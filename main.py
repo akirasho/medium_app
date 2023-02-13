@@ -58,8 +58,10 @@ def plot_wordcloud_black(result, title):
     #plt.title(f"Title: {title}")
     plt.close()
     fig.savefig("wordcloud.png")
-
-@st.cache
+    img = Image.open('wordcloud.png')
+    st.image(img, caption='WordCloud: '+title, use_column_width=True)
+    
+@st.cache_data
 def load_data():
     filename = "df_medium_2023021300.csv"
     df = pd.read_csv(filename)
@@ -100,8 +102,7 @@ def main():
 
     # Wordcloudを描画する
     plot_wordcloud_black(tfidf_result, title)
-    img = Image.open('wordcloud.png')
-    st.image(img, caption='WordCloud: '+title, use_column_width=True)
+
 
 if __name__ == '__main__':
     main()
