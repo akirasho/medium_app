@@ -89,8 +89,9 @@ def main():
     title = df['titles'][n]
 
     # Tfidfを適用するテキスト以外のテキストのリスト
-    list_all = set(texts[0:len(texts)]) - set(texts[n])
-    list_all = list(list_all)
+    #list_all = set(texts[0:len(texts)]) - set(texts[n])
+    #list_all = list(list_all)
+    list_all = texts
 
     # Tfidfを計算する
     tfidf_result = calculate_tfidf(list_all, text_1)
