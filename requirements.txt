@@ -3,7 +3,7 @@ numpy
 pandas
 scikit-learn
 wordcloud
-PIL
+Pillow
 sklearn
 nltk
 matplotlib
