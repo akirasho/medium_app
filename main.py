@@ -97,12 +97,10 @@ def main():
     tfidf_result = calculate_tfidf(list_all, text_1)
 
     # メインパネル
-   
     st.write('### Title: ', title)
 
     # Wordcloudを描画する
     plot_wordcloud_black(tfidf_result, title)
-
 
 if __name__ == '__main__':
     main()
